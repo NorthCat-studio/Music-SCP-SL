@@ -76,7 +76,32 @@
         </nav>
     </header>
 
-   
+   <h1>ㅤㅤㅤㅤㅤ</h1>   
+
+    <main>
+        <section id="home-section">
+            <p class="animated-text">Explore our features and join our community!</p>
+            <img src="---.png" alt="" class="section-image">
+        </section>
+
+
+
+
+        
+    <button id="downloadButton">Скачать все саундтреки</button>
+
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            // Укажите URL архива с саундтреками
+            const fileUrl = ''; // замените на реальный путь
+            const a = document.createElement('a');
+            a.href = fileUrl;
+            a.download = 'soundtracks.zip'; // Имя скачиваемого файла
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        });
+    </script>
 
     <main>
        
